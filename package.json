@@ -6,6 +6,11 @@
   "directories": {
     "test": "tests"
   },
+  "files": [
+    "./dist/index.js",
+    "./dist/index.d.ts",
+    "./dist/index.js.map"
+  ],
   "scripts": {
     "build": "rollup -c",
     "test": "jest"
