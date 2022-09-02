@@ -1,15 +1,20 @@
 {
   "name": "vodit",
-  "version": "0.1.0",
+  "author": "Stefano Baldan",
+  "license": "ISC",
+  "version": "0.1.2",
   "description": "Minimal dependency injection framework. No frills, no dependencies, no decorators.",
+  "keywords": [
+    "dependency injection",
+    "inversion of control",
+    "di",
+    "ioc"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/singintime/vodit.git"
   },
   "main": "dist/index.js",
-  "directories": {
-    "test": "tests"
-  },
   "files": [
     "./dist/index.js",
     "./dist/index.d.ts",
@@ -19,8 +24,6 @@
     "build": "rollup -c",
     "test": "jest"
   },
-  "author": "Stefano Baldan",
-  "license": "ISC",
   "devDependencies": {
     "@types/jest": "28.1.8",
     "jest": "28.1.3",
