@@ -2,7 +2,7 @@
   "name": "vodit",
   "author": "Stefano Baldan",
   "license": "ISC",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Minimal dependency injection framework. No frills, no dependencies, no decorators.",
   "keywords": [
     "dependency injection",
