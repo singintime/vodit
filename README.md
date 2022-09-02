@@ -4,7 +4,7 @@ Minimalist dependency injector. No frills, no dependencies, no decorators.
 
 ## Description
 
-This is yet another library implements the inversion of control (a.k.a. dependency injection)
+This is yet another library that implements the inversion of control (a.k.a. dependency injection)
 pattern. The reason for its existence is that most other libraries out there make use of decorators
 to implement the pattern. Since decorators are still an experimental feature, some people might want
 to avoid their usage altogether in their projects.
