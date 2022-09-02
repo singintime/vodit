@@ -1,0 +1,30 @@
+{
+  "name": "vodit",
+  "version": "0.1.0",
+  "description": "Minimal, undecorated dependency injection framework",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest"
+  },
+  "author": "Stefano Baldan",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "28.1.8",
+    "jest": "28.1.3",
+    "rollup": "2.79.0",
+    "rollup-plugin-dts": "4.2.2",
+    "rollup-plugin-terser": "7.0.2",
+    "rollup-plugin-ts": "3.0.2",
+    "rollup-plugin-typescript2": "0.33.0",
+    "terser": "5.15.0",
+    "ts-jest": "28.0.8",
+    "ts-loader": "9.3.1",
+    "ts-node": "10.9.1",
+    "tslib": "2.4.0",
+    "typescript": "4.8.2"
+  }
+}
