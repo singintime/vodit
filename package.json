@@ -1,7 +1,7 @@
 {
   "name": "vodit",
   "version": "0.1.0",
-  "description": "Minimal, undecorated dependency injection framework",
+  "description": "Minimal dependency injection framework. No frills, no dependencies, no decorators.",
   "main": "dist/index.js",
   "directories": {
     "test": "tests"
