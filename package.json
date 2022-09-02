@@ -1,6 +1,6 @@
 {
   "name": "vodit",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "Minimal dependency injection framework. No frills, no dependencies, no decorators.",
   "repository": {
     "type": "git",
