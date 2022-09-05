@@ -2,7 +2,11 @@ import { Injectable } from "./injectable";
 import { InjectionToken } from "./injection-token";
 
 /**
- * Class provider - maps an injection token to an injectable class.
+ * Maps an injection token to an injectable class.
+ *
+ * Injectable classes must respect the contract defined in the `Injectable` interface, namely:
+ * - a constructor containing a single object as argument,
+ * - a static `inject` object, mapping an injection token to each key of the constructor's argument.
  */
 export interface ClassProvider<T, U, V> {
   provide: InjectionToken<T>;
@@ -10,7 +14,7 @@ export interface ClassProvider<T, U, V> {
 }
 
 /**
- * Factory provider - maps an injection token to a factory method.
+ * Maps an injection token to a factory method.
  */
 export interface FactoryProvider<T, U> {
   provide: InjectionToken<T>;
@@ -18,7 +22,7 @@ export interface FactoryProvider<T, U> {
 }
 
 /**
- * Value provider - maps an injection token to an already instantiated value.
+ * Maps an injection token to aconcrete instance.
  */
 export interface ValueProvider<T> {
   provide: InjectionToken<T>;
@@ -26,6 +30,6 @@ export interface ValueProvider<T> {
 }
 
 /**
- * A Provider maps an injection token to an injectable, factory, or value.
+ * Maps an injection token to an injectable, factory, or concrete instance.
  */
 export type Provider<T, U, V> = ClassProvider<T, U, V> | FactoryProvider<T, V> | ValueProvider<T>;

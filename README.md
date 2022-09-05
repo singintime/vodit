@@ -4,10 +4,13 @@ Minimalist dependency injector. No frills, no dependencies, no decorators.
 
 ## Description
 
-This is yet another library that implements the inversion of control (a.k.a. dependency injection)
-pattern. The reason for its existence is that most other libraries out there make use of decorators
-to implement the pattern. Since decorators are still an experimental feature, some people might want
-to avoid their usage altogether in their projects.
+This is yet another library that implements the
+[inversion of control](https://en.wikipedia.org/inversion_of_control) (a.k.a.
+[dependency injection](https://en.wikipedia.org/dependency_injection)) pattern. The reason for its
+existence is that most other libraries out there make use of
+[decorators](https://www.typescriptlang.org/docs/handbook/decorators.html) to implement the pattern.
+Since decorators are still an experimental feature, some people might want to avoid their usage
+altogether in their projects.
 
 ## Installation
 
@@ -37,8 +40,8 @@ and resolve again the dependency.
 
 `Injectable` instances must respect the following contract:
 
-- a constructor containing a single key/value object as argument,
-- a static `inject` member with tokens for the constructor argument's keys.
+- a constructor containing a single object as argument,
+- a static `inject` object, mapping an injection token to each key of the constructor's argument.
 
 Nested dependencies are supported: an `Injectable` class can require instances of other injectable
 objects as dependencies. If those dependencies are yet not resolved, the injector resolves them
@@ -79,3 +82,7 @@ injector.resolve(A_TOKEN) // instance of A
 injector.resolve(B_TOKEN) // {x: "foo", y: "bar"}
 injector.resolve(C_TOKEN) // 42
 ```
+
+## API documentation
+
+Available [here](https://singintime.github.io/vodit).
