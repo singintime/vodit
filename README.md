@@ -61,14 +61,14 @@ const C_TOKEN = new InjectionToken("C_TOKEN")
 
 // Class respecting the Injectable contract:
 class A {
-    constructor(dependencies: {b: {x: string, y: string}, c: number})
+    constructor(dependencies: {b: {x: string, y: string}, c: number}) {}
     static inject = {b: B_TOKEN, c: C_TOKEN}
 }
 
 // Providers map tokens to dependency resolvers.
 // Injectable classes, factory methods, and concrete instances are supported.
 const providerA = {provide: A_TOKEN, useClass: A}
-const providerB = {provide: B_TOKEN, useFactory: () => {x: "foo", y: "bar"}}
+const providerB = {provide: B_TOKEN, useFactory: () => ({x: "foo", y: "bar"})}
 const providerC = {provide: C_TOKEN, useValue: 42}
 
 // Injectors are used to register providers, and resolve instances
