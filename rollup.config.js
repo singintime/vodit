@@ -1,4 +1,3 @@
-import { terser } from "rollup-plugin-terser";
 import ts from "rollup-plugin-ts";
 
 export default [
@@ -9,6 +8,6 @@ export default [
       format: "cjs",
       sourcemap: true,
     },
-    plugins: [ts(), terser()],
+    plugins: [ts()],
   },
 ];
